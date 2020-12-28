@@ -1,0 +1,13 @@
+// Establecer color de fondo y de texto para el header
+@mixin headerProps {
+  background-color: #29b6f6;
+  color: white;
+}
+// Mixin para cambiar una propiedad de un elemento al hacer pasar el ratón sobre el (hover)
+@mixin hov($property, $prop1, $prop2) {
+  #{$property}: $prop1;
+
+  &:hover {
+    #{$property}: $prop2;
+  }
+}
